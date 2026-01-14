@@ -1,9 +1,9 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from sim import run_sim, convergence_eval
-from shotChart import plot_shot_chart
-from pmake_and_others import plot_weightedBarChart
-from model import plot_logistic
+from src.sim import run_sim, convergence_eval
+from src.shotChart import plot_shot_chart
+from src.pmake_and_others import plot_weightedBarChart
+from src.model import plot_logistic
 
 st.title("NBA 3PT Line Monte Carlo Simulator")
 
