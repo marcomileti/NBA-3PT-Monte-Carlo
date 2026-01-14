@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from pmake_and_others import PMake
+from src.pmake_and_others import PMake
 
 def run_sim(n=10000, shift=0, min_dist=22, max_dist=27):
     shift_ft = shift/12
