@@ -3,12 +3,10 @@ import sqlite3
 from sklearn.linear_model import LogisticRegression
 import numpy as np
 import matplotlib.pyplot as plt
-
+from src.db import get_connection
 
 # connect to SQLite
-conn = sqlite3.connect(
-    r"C:\Users\marco\Downloads\db1.db"
-)
+conn = get_connection()
 
 # creates a two-column table of SHOT_MADE and self-computed distance 
 # for shots between 23.75 (3pt_baseline) and 27 ft
